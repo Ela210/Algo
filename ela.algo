@@ -1,0 +1,33 @@
+ALGORITHM longueur
+VAR
+   STR:STRING;
+   sum:INTEGER:=0;
+   count:INTEGER:=0;
+   vowel:INTEGER:=0;
+   i:INTEGER;
+
+BEGIN
+
+   READ(STR);
+FOR i FROM 0 TO length(STR)
+
+    if(STR[i] != ' '):  
+        sum = sum + 1;  
+    END_IF
+      Write(sum);
+
+       IF (" ") THEN
+           count=count+i;
+       END_IF
+   Write(count);
+
+   IF (char[i]:="a"||"e"||"y"||"u"||"i"||"w") THEN
+       vowel=vowel+1;
+   END_IF
+    Write(vowel);
+   END_FOR
+   
+END
+    
+   
+  

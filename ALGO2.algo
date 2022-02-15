@@ -1,0 +1,20 @@
+ALGORITHM algo2
+VAR
+tab1,tab2,tab3 : ARRAY_OF iNTEGER[];
+Sum,i,j,k,n,m,x:integer:=0;
+EXIST:BOOLEAN;
+BEGIN
+ FOR i FROM 0 TO n STEP step  DO
+  FOR j FROM 0 TO m STEP step  DO
+       IF (tab1[i] = tab2[j]) THEN
+       EXIST:TRUE;
+       ELSE_IF (EXIST:=FALSE) THEN
+           tab3[K]:=tab1[i];
+         END_IF
+         END_FOR
+         END_FOR 
+
+    FOR k FROM 0 TO x STEP step  DO
+        Sum:=Sum+tab3[k]
+    END_FOR
+    END

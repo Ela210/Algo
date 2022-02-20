@@ -1,0 +1,53 @@
+//Meth1
+
+ALGORITHM algo3
+PROCEDURE dot_product(v1,v2,ps)
+VAR
+    v1,v2 : ARRAY_OF FLOAT[]; 
+    ps:FLOAT;
+    i:iNTEGER;
+BEGIN
+  ps:=0.0;
+  i:=0;
+  IF (v1.length <> v2.length) THEN
+            Write("undefined produit scalaire");
+    ELSE
+        WHILE (i <v.length ) DO
+            ps := ps + v1[i]*v2[i];
+        END_WHILE
+    END_IF
+END
+  
+  //meth2
+
+  ALGORITHM
+  VAR 
+  v1 , v2 :ARRAY_OF FLOAT[];
+  ps:FLOAT.
+  BEGIN
+  n1:=read_size(v1);
+  read_array(v1);
+  n2:=read_array(v2);
+  read_array(v2);
+
+  WHILE(ps<>0)
+  Write("vectors are not orthogonal");
+  END_WHILE
+  END
+
+   //Meth3 
+
+  FUNCTION dot_product(V1,V2 :ARRAY_OF FLOAT):FLOAT
+  VAR
+  i:=INTEGER;
+  ps:=FLOAT;
+  BEGIN
+  IF (V1.length<>V2.length) THEN
+  RETURN:NaN;
+  ELSE
+  WHILE (i<V.lenth) DO
+    ps:=ps+v1[i]*v2[i];
+  END_WHILE
+  RETURN ps;
+  END_IF
+  END

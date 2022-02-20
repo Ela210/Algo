@@ -18,3 +18,8 @@ BEGIN
         Sum:=Sum+tab3[k]
     END_FOR
     END
+
+
+
+
+

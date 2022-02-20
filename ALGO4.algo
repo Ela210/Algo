@@ -1,0 +1,12 @@
+PROCEDURE card(var tab:ARRAY_OF INTEGER)
+VAR
+  i , elt :INTEGER
+  BEGIN
+  FOR i FROM 1 TO tab.length-1 STEP step  DO
+      elt:=tab[i];
+      IF (i-1 > 0 AND tab[i-1] > elt )   THEN
+          tab[i]:=tab[i-1];
+      END_IF
+      tab[i]:=elt;
+  END_FOR
+  END
